@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="heading"><p>Image Slider</p></div>
+    <div class="slider">
+        
+        <div class="slides fade">
+            <div class="imgNum">1 / 5</div>
+            <img src="a.jpg" >
+            <div class="caption">Image # 01</div>
+        </div>
+
+        <div class="slides fade">
+            <div class="imgNum">2 / 5</div>
+            <img src="b.jpg" >
+            <div class="caption">Image # 02</div>
+        </div>
+
+        <div class="slides fade">
+            <div class="imgNum">3 / 5</div>
+            <img src="c.jpg" >
+            <div class="caption">Image # 03</div>
+        </div>
+
+        <div class="slides fade">
+            <div class="imgNum">4 / 5</div>
+            <img src="d.jpg"  >
+            <div class="caption">Image # 04</div>
+        </div>
+
+        <div class="slides fade">
+            <div class="imgNum">5 / 5</div>
+            <img src="e.jpg" >
+            <div class="caption">Image # 05</div>
+        </div>
+
+        <a onclick="onClickSlide(-1)" class="prev">❮</a>
+        <a onclick="onClickSlide(1)" class="next">❯</a>
+    </div>
+
+    <div class="dotBar">
+        <span class="dots" onclick="currentImg(1)"></span>
+        <span class="dots" onclick="currentImg(2)"></span>
+        <span class="dots" onclick="currentImg(3)"></span>
+        <span class="dots" onclick="currentImg(4)"></span>
+        <span class="dots" onclick="currentImg(5)"></span>
+    </div>
+
+</body>
+<script src="app.js"></script>
+</html>
